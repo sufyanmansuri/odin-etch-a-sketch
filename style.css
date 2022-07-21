@@ -1,0 +1,21 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pad {
+  display: flex;
+  flex-direction: row;
+}
+.box {
+  border: 1px solid black;
+  padding: 20px;
+}
