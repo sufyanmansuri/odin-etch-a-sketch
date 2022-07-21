@@ -1,5 +1,8 @@
+/* ~~~~~~ */
+/* Layout */
+/* ~~~~~~ */
 * {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Press Start 2P", cursive;
 }
 html,
 body {
@@ -14,8 +17,19 @@ body {
 .pad {
   display: flex;
   flex-direction: row;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .box {
   border: 1px solid black;
   padding: 20px;
+}
+
+/* ~~~~~~ */
+/*  Text  */
+/* ~~~~~~ */
+
+.title {
+  font-size: 28px;
+  padding-bottom: 10px;
+  text-shadow: 2px 2px 5px;
 }
