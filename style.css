@@ -1,12 +1,26 @@
-/* ~~~~~~ */
-/*  Test  */
-/* ~~~~~~ */
-div {
-  border: 1px solid black;
+* {
+  font-family: "Press Start 2P", cursive;
 }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #a8dadc;
+}
+.main {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* div {
+  border: 1px solid black;
+} */
 .flex {
   display: flex;
-  /* height: 100%; */
   gap: 36px;
 }
 .sidebar {
@@ -23,16 +37,15 @@ div {
 .article {
   height: 100%;
   flex-grow: 5;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  /* justify-self: flex-start; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: flex-start; */
 }
 .heading {
   width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #1d3557;
 }
 .container-col {
   flex-grow: 1;
@@ -43,17 +56,18 @@ div {
   align-items: center;
 }
 .title {
-  /* padding-left: 15%; */
   text-align: center;
-  font-size: 28px;
   padding-bottom: 20px;
+  color: #e63946;
   padding-top: 10px;
 }
 .sketch {
-  /* flex-grow: 10; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   height: 500px;
+  max-height: 500px;
+  background-color: #f1faee;
   width: 500px;
+  max-width: 500px;
 }
 .row {
   display: flex;
@@ -64,30 +78,20 @@ div {
 }
 .footer {
   display: flex;
+  position: fixed;
   width: 100%;
+  background-color: #1d3557;
   justify-content: center;
+  color: #e63946;
   align-items: center;
   bottom: 0;
 }
-/* ~~~~~~ */
-/* Layout */
-/* ~~~~~~ */
-* {
-  font-family: "Press Start 2P", cursive;
+button {
+  background-color: #457b9d;
+  color: #f1faee;
+  padding: 10px 24px 10px 24px;
+  margin: 5px;
 }
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.box {
-  /* padding: calc(); */
+.box{
+  /* border: 1px solid black */
 }

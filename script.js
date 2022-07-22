@@ -8,6 +8,8 @@ document.addEventListener(
       for (let j = 0; j < 16; j++) {
         const box = document.createElement("div");
         box.classList.add("box");
+        box.style.height = `${500 / 16}px`;
+        box.style.width = `${500 / 16}px`;
         row.append(box);
       }
       pad.append(row);
