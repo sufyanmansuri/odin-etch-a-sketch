@@ -100,3 +100,7 @@ button {
 .align-icon {
   vertical-align: top;
 }
+a {
+  text-decoration: underline;
+  color: #e63946;
+}
