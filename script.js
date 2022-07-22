@@ -70,6 +70,9 @@ function changeGrid() {
   drawSketchPad(userInput);
 }
 
-function clear(){
-  
+function clearSketch() {
+  const boxes = document.querySelectorAll(".box");
+  boxes.forEach((box) => {
+    box.style.backgroundColor = "";
+  });
 }

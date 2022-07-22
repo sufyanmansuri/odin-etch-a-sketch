@@ -20,7 +20,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body onload="afterPageLoad()">
+  <body>
     <div class="main">
       <div class="heading">
         <h1 class="title">Etch-A-Sketch</h1>
@@ -28,8 +28,12 @@
       <div class="flex">
         <div class="sidebar">
           <div class="buttons">
-            <button>Clear <i class="fa-solid fa-eraser"></i></button>
-            <button onclick="changeGrid()">Change Grid Size <i class="fa-solid fa-border-none"></i></button>
+            <button onclick="clearSketch()">
+              Clear <i class="fa-solid fa-eraser"></i>
+            </button>
+            <button onclick="changeGrid()">
+              Change Grid Size <i class="fa-solid fa-border-none"></i>
+            </button>
           </div>
         </div>
         <div class="article">
