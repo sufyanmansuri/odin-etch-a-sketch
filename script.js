@@ -1,7 +1,7 @@
 document.addEventListener(
   "DOMContentLoaded",
   () => {
-    const pad = document.querySelector(".pad");
+    const pad = document.querySelector(".sketch");
     for (let i = 0; i < 16; i++) {
       const row = document.createElement("div");
       row.classList.add("row");
@@ -12,6 +12,8 @@ document.addEventListener(
       }
       pad.append(row);
     }
+    const copyright = document.querySelector(".copyright");
+    copyright.textContent = `Copyright \u00A9 ${new Date().getFullYear()} sufyanmansuri`;
   },
   false
 );
@@ -24,5 +26,5 @@ function afterPageLoad() {
 }
 
 function drawPixel(e) {
-  e.target.style.backgroundColor = "black"
+  e.target.style.backgroundColor = "black";
 }
