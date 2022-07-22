@@ -17,8 +17,8 @@ function drawSketchPad(gridSize) {
     for (let j = gridSize; j > 0; j--) {
       const box = document.createElement("div");
       box.classList.add("box");
-      box.style.height = `${500 / gridSize}px`;
-      box.style.width = `${500 / gridSize}px`;
+      box.style.height = `${500 / gridSize - 1}px`;
+      box.style.width = `${500 / gridSize - 1}px`;
       row.append(box);
     }
     pad.append(row);
@@ -61,8 +61,8 @@ function getRainbowColor() {
       default:
         return "black";
     }
-  }else{
-    pass =0;
+  } else {
+    pass = 0;
     return "black";
   }
 }
