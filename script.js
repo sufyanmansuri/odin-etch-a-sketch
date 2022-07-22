@@ -24,13 +24,11 @@ function drawSketchPad(gridSize) {
     pad.append(row);
   }
   addMouseOverEventListener();
-  const copyright = document.querySelector(".copyright");
-  copyright.textContent = `Copyright \u00A9 ${new Date().getFullYear()} sufyanmansuri`;
 }
 function addMouseOverEventListener() {
   window.boxes = document.querySelectorAll(".box");
   window.boxes.forEach((box) => {
-    box.addEventListener("mouseover", drawPixel);
+    box.addEventListener("click", drawPixel);
   });
 }
 function getRainbowColor() {

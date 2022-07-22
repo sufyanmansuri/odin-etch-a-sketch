@@ -97,3 +97,6 @@ button {
   border-top: 1px solid rgb(156 156 156);
   border-left: 1px solid rgb(156 156 156);
 }
+.align-icon {
+  vertical-align: top;
+}
