@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", drawSketchPad(16), false);
+let rainbow = false;
 function removeAllChildNodes(parent) {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
@@ -53,12 +54,13 @@ function getRainbowColor() {
   }
 }
 
-function drawPixel(e, rainbow = false) {
+function drawPixel(e) {
   if (rainbow == false) {
     e.target.style.backgroundColor = "black";
   } else {
+    console.log("here");
     let color = getRainbowColor();
-    e.target.style.color = color;
+    e.target.style.backgroundColor = color;
   }
 }
 
@@ -75,4 +77,13 @@ function clearSketch() {
   boxes.forEach((box) => {
     box.style.backgroundColor = "";
   });
+}
+
+function rainbowPixels() {
+  if (rainbow == false) {
+    rainbow = true;
+    addMouseOverEventListener();
+  } else {
+    rainbow = false;
+  }
 }
