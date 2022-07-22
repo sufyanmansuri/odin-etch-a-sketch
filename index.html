@@ -14,8 +14,11 @@
     <link rel="stylesheet" href="style.css" />
     <!-- Javascript -->
     <script src="script.js" defer></script>
-    <!-- Icons -->
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/1810f8d134.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body onload="afterPageLoad()">
     <div class="main">
@@ -25,8 +28,8 @@
       <div class="flex">
         <div class="sidebar">
           <div class="buttons">
-            <button>Clear</button>
-            <button>Change Grid Size</button>
+            <button>Clear <i class="fa-solid fa-eraser"></i></button>
+            <button>Change Grid Size <i class="fa-solid fa-border-all"></i></button>
           </div>
         </div>
         <div class="article">
@@ -37,9 +40,5 @@
         <p class="copyright"></p>
       </div>
     </div>
-    <!-- Call the replace method -->
-    <script>
-      feather.replace();
-    </script>
   </body>
 </html>
