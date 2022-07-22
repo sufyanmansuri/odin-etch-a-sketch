@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", drawSketchPad(16), false);
 let rainbow = false;
+let pass = 0;
 function removeAllChildNodes(parent) {
   while (parent.firstChild) {
     parent.removeChild(parent.firstChild);
@@ -34,23 +35,35 @@ function addMouseOverEventListener() {
 }
 function getRainbowColor() {
   const randNumber = Math.floor(Math.random() * 7) + 1;
-  switch (randNumber) {
-    case 1:
-      return "red";
-    case 2:
-      return "orange";
-    case 3:
-      return "yellow";
-    case 4:
-      return "green";
-    case 5:
-      return "blue";
-    case 6:
-      return "indigo";
-    case 7:
-      return "violet";
-    default:
-      return "black";
+  if (pass < 10) {
+    switch (randNumber) {
+      case 1:
+        pass++;
+        return "red";
+      case 2:
+        pass++;
+        return "orange";
+      case 3:
+        pass++;
+        return "yellow";
+      case 4:
+        pass++;
+        return "green";
+      case 5:
+        pass++;
+        return "blue";
+      case 6:
+        pass++;
+        return "indigo";
+      case 7:
+        pass++;
+        return "violet";
+      default:
+        return "black";
+    }
+  }else{
+    pass =0;
+    return "black";
   }
 }
 
