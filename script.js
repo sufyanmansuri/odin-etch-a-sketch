@@ -31,15 +31,45 @@ function addMouseOverEventListener() {
     box.addEventListener("mouseover", drawPixel);
   });
 }
+function getRainbowColor() {
+  const randNumber = Math.floor(Math.random() * 7) + 1;
+  switch (randNumber) {
+    case 1:
+      return "red";
+    case 2:
+      return "orange";
+    case 3:
+      return "yellow";
+    case 4:
+      return "green";
+    case 5:
+      return "blue";
+    case 6:
+      return "indigo";
+    case 7:
+      return "violet";
+    default:
+      return "black";
+  }
+}
 
-function drawPixel(e) {
-  e.target.style.backgroundColor = "black";
+function drawPixel(e, rainbow = false) {
+  if (rainbow == false) {
+    e.target.style.backgroundColor = "black";
+  } else {
+    let color = getRainbowColor();
+    e.target.style.color = color;
+  }
 }
 
 function changeGrid() {
   let userInput = prompt("Enter a grid size");
-  while(userInput > 100){
+  while (userInput > 100) {
     userInput = prompt("Enter a grid size (Limit: 100)");
   }
   drawSketchPad(userInput);
+}
+
+function clear(){
+  
 }
