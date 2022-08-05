@@ -28,7 +28,7 @@ function drawSketchPad(gridSize) {
 function addMouseOverEventListener() {
   window.boxes = document.querySelectorAll(".box");
   window.boxes.forEach((box) => {
-    box.addEventListener("mouseover", drawPixel);
+    box.addEventListener("click", drawPixel);
   });
 }
 function getRainbowColor() {
